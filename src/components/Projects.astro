@@ -4,6 +4,9 @@ import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import FastApi from "./icons/FastApi.astro"
+import PostgreSQL from "./icons/PostgreSQL.astro"
+import Aws from "./icons/AWS.astro"
 
 const TAGS = {
   NEXT: {
@@ -16,16 +19,31 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  FASTAPI: {
+    name: "FastAPI",
+    class: "bg-[#059183] text-white", // Un color que represente a FastAPI
+    icon: FastApi,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#336791] text-white", // Color de PostgreSQL
+    icon: PostgreSQL,
+  },
+  AWS: {
+    name: "AWS",
+    class: "bg-[#FF9900] text-black", // Color de AWS (negro para el texto)
+    icon: Aws,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Shain Flow",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
+      "Sistema de control de asistencia biométrica, cálculo de nómina automático y gestión de personal. El sistema registra las entradas y salidas mediante reconocimiento facial.\n\nTecnologías: Python, FastAPI, face_recognition, PostgreSQL, Swagger, AWS",
+    link: "https://shain-flow.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/ShainFlow.png",
+    tags: [TAGS.FASTAPI, TAGS.POSTGRESQL, TAGS.AWS],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
